@@ -1,0 +1,52 @@
+{
+  "name": "intothesource/laravel-form-builder",
+  "description": "A laravel form builder",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "form",
+    "builder"
+  ],
+  "authors": [
+    {
+      "name": "Ramon Smit",
+      "email": "rsmit@intothesource.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": ">=5.4"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.5.0",
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "IntoTheSource\\LaravelFormBuilder\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IntoTheSource\\LaravelFormBuilder\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IntoTheSource\\LaravelFormBuilder\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
